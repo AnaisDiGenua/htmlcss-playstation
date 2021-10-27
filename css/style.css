@@ -19,10 +19,13 @@
 .ms_navbar {
     width: 100%;
 }
-.nav-item {
+.ms_navbar li {
     margin-right: 10px;
 }
-.ms_navbar i {
+.nav-item a {
+    color: black;
+}
+.ms_navbar .nav-item i {
     font-size: 10px;
     padding-left: 3px;
 }
