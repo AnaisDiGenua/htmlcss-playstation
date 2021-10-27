@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.ms_blue {
+    color: #0070d1;
+}
 
 
 /* header */
@@ -25,9 +28,6 @@
 .ms_navbar .nav-item i {
     font-size: 10px;
     padding-left: 3px;
-}
-.ms_navbar i.fa-search {
-    font-size: 20px;
 }
 .ms_navbar .btn {
     background-color: #363636;
@@ -72,6 +72,28 @@
 
 
 
+/* sezione playstation 5 */
+#playstation5 img {
+    width: 100%;
+}
+#playstation5 img.play-big-img {
+    width: 100%;
+}
+#playstation5 .btn {
+    background-color: #0070d1;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .row.ms_justify {
+        justify-content: space-around;
+    }
+}
+
+
+
 
 
 /* *****debug***** */
@@ -87,6 +109,10 @@
     background-color: lightcoral;
 }
 .debug .box {
-    /* height: 100px; */
-    /* background-color: darkcyan; */
+    height: 100px;
+    background-color: darkcyan;
+    border: 1px solid black;
+}
+.debug #playstation5 {
+    height: 1000px;
 }
