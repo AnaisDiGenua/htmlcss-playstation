@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* header */
+.ms_header-top {
+    height: 30px;
+    background-color: black;
+}
+.ms_header-top img {
+    width: 70px;
+}
+.ms_header-bottom {
+    height: 65px;
+}
+
+
+/* *****debug***** */
