@@ -19,9 +19,18 @@
 .ms_navbar {
     width: 100%;
 }
+.nav-item {
+    margin-right: 10px;
+}
 .ms_navbar i {
     font-size: 10px;
     padding-left: 3px;
+}
+.ms_navbar i.fa-search {
+    font-size: 20px;
+}
+.ms_navbar .btn {
+    background-color: #363636;
 }
 
 
