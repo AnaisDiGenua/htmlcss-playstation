@@ -45,23 +45,31 @@
 
 
 /* jumbo */
-#jumbotron {
+.ms_jumbo-top {
     background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-/* #jumbotron .ms_jumbo-content {
-    position: absolute;
-    left: 0;
-    bottom: 50px;
-} */
-.ms_jumbo-content {
-    padding-top: 200px;
-}
-#jumbotron .btn {
+.ms_jumbo-top .btn {
     background-color: #cd3d0f;
 }
+.ms_jumbo-top img {
+    width: 30%;
+}
+#jumbotron .ms_jumbo-content {
+    position: absolute;
+    bottom: 50px;
+}
+/* .ms_jumbo-content {
+    padding-top: 180px;
+} */
+.ms_jumbo-bottom img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; 
+}
+
 
 
 
@@ -70,7 +78,15 @@
 .debug .ms_header-bottom {
     background-color: lightblue;
 }
-.debug #jumbotron {
+.debug .ms_jumbo-top{
     height: calc(100vh - 130px);
+}
+
+.debug .ms_jumbo-bottom {
+    /* height: 300px; */
     background-color: lightcoral;
+}
+.debug .box {
+    /* height: 100px; */
+    /* background-color: darkcyan; */
 }
