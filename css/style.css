@@ -8,6 +8,22 @@
 }
 
 
+
+
+/* btn */
+.ms_navbar .btn {
+    background-color: #363636;
+}
+.ms_jumbo-top .btn, #jumbotron-2 .btn {
+    background-color: #cd3d0f;
+}
+#playstation5 .btn {
+    background-color: #0070d1;
+}
+
+
+
+
 /* header */
 .ms_header-top {
     height: 30px;
@@ -29,9 +45,6 @@
     font-size: 10px;
     padding-left: 3px;
 }
-.ms_navbar .btn {
-    background-color: #363636;
-}
 /* change nav-link color */
 .navbar-light .navbar-nav .nav-link {
     color: black;
@@ -46,29 +59,23 @@
 
 /* jumbo */
 .ms_jumbo-top {
+    height: calc(100vh - 130px);
     background-image: url(../img/jumbo-bg.png);
     background-position: center;
     background-size: cover;
-    position: relative;
-}
-.ms_jumbo-top .btn {
-    background-color: #cd3d0f;
 }
 .ms_jumbo-top img {
     width: 30%;
 }
-#jumbotron .ms_jumbo-content {
-    position: absolute;
-    bottom: 50px;
-}
-/* .ms_jumbo-content {
+.ms_jumbo-content {
     padding-top: 180px;
-} */
+}
 .ms_jumbo-bottom img {
     width: 100%;
     height: 100%;
     border-radius: 20px; 
 }
+
 
 
 
@@ -79,8 +86,23 @@
 #playstation5 img.play-big-img {
     width: 100%;
 }
-#playstation5 .btn {
-    background-color: #0070d1;
+
+
+
+
+/* jumbo 2 */
+#jumbotron-2 {
+    height: calc(100vh - 130px);
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto;
+}
+.ms_jumbo-content-2 {
+    padding-top: 40px;
+}
+.ms_jumbo-2 img {
+    width: 40%;
 }
 
 
@@ -95,24 +117,37 @@
 
 
 
+@media screen and (min-width: 992px) {
+    .ms_jumbo-content {
+        padding-top: 130px;
+    }
+    .ms_jumbo-2 img {
+        width: 15%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
 
 /* *****debug***** */
-.debug .ms_header-bottom {
+/* .debug .ms_header-bottom {
     background-color: lightblue;
-}
-.debug .ms_jumbo-top{
-    height: calc(100vh - 130px);
-}
+} */
 
-.debug .ms_jumbo-bottom {
+/* .debug .ms_jumbo-bottom {
     /* height: 300px; */
-    background-color: lightcoral;
-}
-.debug .box {
+    /* background-color: lightcoral;
+} */ 
+/* .debug .box {
     height: 100px;
     background-color: darkcyan;
     border: 1px solid black;
-}
-.debug #playstation5 {
+} */
+/* .debug #playstation5 {
     height: 1000px;
-}
+} */
