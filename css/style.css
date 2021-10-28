@@ -17,7 +17,7 @@
 .ms_jumbo-top .btn, #jumbotron-2 .btn {
     background-color: #cd3d0f;
 }
-#playstation5 .btn {
+#playstation5 .btn, #playstation4 .btn {
     background-color: #0070d1;
 }
 
@@ -117,6 +117,15 @@
     border-radius: 20px; 
 }
 
+
+/* playstation 4 */
+#playstation4 img {
+    width: 90%;
+}
+#playstation4 span {
+    display: block;
+    margin-bottom: 1rem;
+}
 
 
 
