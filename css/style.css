@@ -22,8 +22,8 @@
 }
 #playstation-plus .btn {
     background-color: #d9dadc;
+    color: #0070d1;
 }
-
 
 
 
@@ -142,9 +142,7 @@
 #playstation-plus .play-plus-big{
     width: 80%;
 }
-#playstation-plus .btn {
-    color: #0070d1;
-}
+
 
 
 
@@ -152,6 +150,22 @@
 #sale img{
     width: 80%;
 }
+
+
+/* playstation now */
+#playstation-now {
+    background-color: #161c3b   ;
+}
+#playstation-now .play-now{
+    width: 50%;
+}
+#playstation-now .play-now-big{
+    width: 80%;
+}
+
+
+
+
 
 
 @media screen and (min-width: 768px) {
