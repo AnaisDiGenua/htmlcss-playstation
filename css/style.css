@@ -20,6 +20,10 @@
 #playstation5 .btn, #playstation4 .btn {
     background-color: #0070d1;
 }
+#playstation-plus .btn {
+    background-color: #d9dadc;
+}
+
 
 
 
@@ -128,6 +132,27 @@
 }
 
 
+/* playstation plus */
+#playstation-plus {
+    background-color: #bebcbb;
+}
+#playstation-plus .play-plus{
+    width: 50%;
+}
+#playstation-plus .play-plus-big{
+    width: 80%;
+}
+#playstation-plus .btn {
+    color: #0070d1;
+}
+
+
+
+/* sale */
+#sale img{
+    width: 80%;
+}
+
 
 @media screen and (min-width: 768px) {
     .row.ms_justify {
@@ -139,12 +164,12 @@
 
 
 @media screen and (min-width: 992px) {
-    .ms_jumbo-content {
-        padding-top: 130px;
-    }
     .ms_jumbo-2 img {
         width: 15%;
         margin-bottom: 2rem;
+    }
+    .ms_jumbo-content {
+        padding-top: 130px;
     }
 }
 
