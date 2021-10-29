@@ -6,6 +6,9 @@
 .ms_blue {
     color: #0070d1;
 }
+.ms_ng-margin {
+    margin-bottom: -12px;
+}
 
 
 
@@ -111,15 +114,17 @@
 
 
 
+
 /* nuove uscite */
 #new-release {
     background-color: #1f1f1f;
 }
 #new-release img {
     width: 100%;
-    height: 100%;
     border-radius: 20px; 
 }
+
+
 
 
 /* playstation 4 */
@@ -130,6 +135,8 @@
     display: block;
     margin-bottom: 1rem;
 }
+
+
 
 
 /* playstation plus */
@@ -152,6 +159,8 @@
 }
 
 
+
+
 /* playstation now */
 #playstation-now {
     background-color: #161c3b   ;
@@ -164,11 +173,34 @@
 }
 
 
+
+
 /* social media */
 #social-media img {
     width: 100%;
 }
 
+
+
+
+/* footer */
+footer {
+    height: 800px;
+    background-color: #00439c;
+}
+footer .logo-ps {
+    width: 65px;
+}
+footer .world-img {
+    width: 20px;
+}
+footer li {
+    list-style: none;
+}
+footer li a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -178,9 +210,10 @@
     .row.ms_justify {
         justify-content: space-around;
     }
+    footer .logo-ps {
+        width: 80px;
+    }
 }
-
-
 
 
 @media screen and (min-width: 992px) {
@@ -201,19 +234,8 @@
 
 
 /* *****debug***** */
-/* .debug .ms_header-bottom {
-    background-color: lightblue;
-} */
-
-/* .debug .ms_jumbo-bottom {
-    /* height: 300px; */
-    /* background-color: lightcoral;
-} */ 
-/* .debug .box {
-    height: 100px;
-    background-color: darkcyan;
+.debug .boxx {
+    /* height: 200px; */
+    background-color: lightsalmon;
     border: 1px solid black;
-} */
-/* .debug #playstation5 {
-    height: 1000px;
-} */
+}
