@@ -82,10 +82,8 @@ header {
     background-size: cover;
 }
 .ms_jumbo-top img {
-    width: 30%;
-}
-.ms_jumbo-content {
-    padding-top: 180px;
+    width: 200px;
+    min-width: 200px;
 }
 .ms_jumbo-bottom img {
     width: 100%;
