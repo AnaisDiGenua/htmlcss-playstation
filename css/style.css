@@ -21,15 +21,36 @@
 .ms_navbar .btn {
     background-color: #363636;
 }
+.ms_navbar .btn:hover {
+    background-color: #606060;
+}
 .ms_jumbo-top .btn, #jumbotron-2 .btn {
     background-color: #cd3d0f;
+    outline: 2px solid black;
+}
+.ms_jumbo-top .btn:hover, #jumbotron-2 .btn:hover {
+    box-shadow: 0 0 0 4px #cd3d0f;
 }
 #playstation5 .btn, #playstation4 .btn {
     background-color: #0070d1;
+    outline: 2px solid white;
+}
+#playstation5 .btn:hover, #playstation4 .btn:hover {
+    box-shadow: 0 0 0 4px #0070d1;
 }
 #playstation-plus .btn {
     background-color: #d9dadc;
-    color: #0070d1;
+    color: #0070d1; 
+    outline: 2px solid #bebcbb;
+}
+#playstation-plus .btn:hover {
+    box-shadow: 0 0 0 4px rgba(193,197,200,.9);
+}
+#playstation-now .btn{
+    outline: 2px solid #161c3b;
+}
+#playstation-now .btn:hover{
+    box-shadow: 0 0 0 4px white;
 }
 
 
@@ -126,7 +147,7 @@ header {
     background-color: #1f1f1f;
 }
 #new-release img {
-    width: 100%;
+    /* width: 100%; */
     border-radius: 20px; 
 }
 
@@ -169,7 +190,7 @@ header {
 
 /* playstation now */
 #playstation-now {
-    background-color: #161c3b   ;
+    background-color: #161c3b;
 }
 #playstation-now .play-now{
     width: 50%;
@@ -214,7 +235,16 @@ footer .footer-logo {
 
 
 @media screen and (min-width: 768px) {
-    .row.ms_justify {
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    #playstation5 .row.ms_justify {
         justify-content: space-around;
     }
     footer .logo-ps {
