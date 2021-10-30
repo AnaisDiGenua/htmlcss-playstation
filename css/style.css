@@ -52,9 +52,6 @@ header {
     height: 75px;
     background-color: white;
 }
-.ms_navbar {
-    width: 100%;
-}
 .ms_navbar li {
     margin-right: 10px;
 }
@@ -113,17 +110,16 @@ header {
 
 /* jumbo 2 */
 #jumbotron-2 {
-    height: 580px;
+    height: 500px;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-position: center;
     background-size: cover;
     overflow-y: auto;
 }
-.ms_jumbo-content-2 {
-    padding-top: 80px;
-}
-.ms_jumbo-2 img {
-    width: 40%;
+
+#jumbotron-2 img {
+    width: 200px;
+    min-width: 200px;
 }
 
 
@@ -161,7 +157,7 @@ header {
     width: 50%;
 }
 #playstation-plus .play-plus-big{
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -235,9 +231,8 @@ footer .footer-logo {
 
 
 @media screen and (min-width: 992px) {
-    .ms_jumbo-2 img {
-        width: 15%;
-        margin-bottom: 2rem;
+    #jumbotron-2 {
+        height: 580px;
     }
 }
 
