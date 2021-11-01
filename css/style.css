@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 .ms_blue {
     color: #0070d1;
 }
@@ -13,9 +16,12 @@
     margin-bottom: -12px;
 }
 .ms_fixed-shadow {
-    box-shadow: 0 0 0 4px #0070d1;
-
+    box-shadow: 0 0 0 4px ;
 }
+.ms_fixed-border-b {
+    border-bottom: 2px solid #0070d1;
+}
+
 
 
 
@@ -62,27 +68,35 @@
 
 /* header */
 header {
-    position: fixed;
-    right: 0;
-    left: 0;
+    display:initial;
 }
 .ms_header-top {
-    height: 30px;
     background-color: black;
 }
 .ms_header-top img {
     width: 70px;
+    cursor: pointer;
 }
 .ms_header-bottom {
-    height: 75px;
     background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 9999;
 }
 .ms_navbar li {
-    margin-right: 10px;
+    margin-right: 5px;
+}
+.ms_navbar li a{
+    font-size: 0.8rem;
 }
 .ms_navbar .nav-item i {
     font-size: 10px;
-    padding-left: 3px;
+    padding-left: 2px;
+    color: gray;
+}
+.ms_navbar .nav-item i.fa-search {
+    color: black;
 }
 /* change nav-link color */
 .navbar-light .navbar-nav .nav-link {
@@ -98,7 +112,7 @@ header {
 
 /* jumbo */
 #jumbotron {
-    padding-top: 105px;
+    /* padding-top: 75px; */
 }
 .ms_jumbo-top {
     height: 500px;
@@ -112,6 +126,8 @@ header {
 }
 .ms_jumbo-bottom img {
     border-radius: 20px; 
+    opacity: 0.8;
+    cursor: pointer;
 }
 .ms_jumbo-bottom .box {
     border-radius: 20px; 
@@ -119,6 +135,7 @@ header {
     position: relative;
     bottom: 0;
     transition: transform 0.3s ease-in-out;
+    z-index: 9998;
 }
 .ms_jumbo-bottom .box:hover {
     box-shadow: 0 0 0 4px #0070d1;
@@ -126,8 +143,17 @@ header {
 }
 .ms_jumbo-bottom .box:hover img{
     box-shadow: 0 .75rem 8px rgba(0, 0, 0, .5);
+    opacity: 1;
 }
-
+.ms_hover-up-text {
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 1.4s ease-out;
+}
+.ms_hover-up-text:hover {
+    opacity: 1;
+    transform: translateY(-15px);
+}
 
 
 
@@ -135,11 +161,15 @@ header {
 /* sezione playstation 5 */
 #playstation5 img {
     width: 80%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#playstation5 img:hover {
+    opacity: 1;
 }
 #playstation5 img.play-big-img {
     width: 100%;
 }
-
 
 
 
@@ -152,10 +182,16 @@ header {
     background-size: cover;
     overflow-y: auto;
 }
-
 #jumbotron-2 img {
     width: 200px;
     min-width: 200px;
+}
+.ms_opacity-text {
+    opacity: 0;
+    transition: opacity 1.4s ease-out;
+}
+.ms_opacity-text:hover {
+    opacity: 1;
 }
 
 
@@ -166,20 +202,19 @@ header {
     background-color: #1f1f1f;
 }
 #new-release img {
-    /* width: 100%; */
     border-radius: 20px; 
+    cursor: pointer;
+}
+#new-release img:hover {
+    transform: scale(1.02);
 }
 
 
 
 
 /* playstation 4 */
-#playstation4 img {
-    width: 90%;
-}
 #playstation4 span {
     display: block;
-    margin-bottom: 1rem;
 }
 
 
@@ -189,21 +224,19 @@ header {
 #playstation-plus {
     background-color: #bebcbb;
 }
-#playstation-plus .play-plus{
-    width: 50%;
-}
-#playstation-plus .play-plus-big{
-    width: 100%;
-}
 
 
 
 
 /* sale */
-#sale img{
-    width: 80%;
+#sale img {
+    border-radius: 20px;
+    cursor: pointer;
 }
-
+.ms_hover-bigger:hover {
+    transform: scale(1.04);
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+}
 
 
 
@@ -211,21 +244,14 @@ header {
 #playstation-now {
     background-color: #161c3b;
 }
-#playstation-now .play-now{
-    width: 50%;
-}
-#playstation-now .play-now-big{
-    width: 80%;
-}
 
 
 
-
-/* social media */
+/* social */
 #social-media img {
-    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
 }
-
 
 
 
@@ -254,38 +280,12 @@ footer .footer-logo {
 
 
 @media screen and (min-width: 768px) {
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    h4 {
-        font-size: 1.8rem;
-    }
     #playstation5 .row.ms_justify {
         justify-content: space-around;
     }
-    footer .logo-ps {
-        width: 80px;
-    }
     footer {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
 
 
-@media screen and (min-width: 992px) {
-    #jumbotron-2 {
-        height: 580px;
-    }
-}
-
-
-
-
-
-
-
-
-/* *****debug***** */
