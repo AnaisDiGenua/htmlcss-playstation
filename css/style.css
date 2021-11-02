@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    overflow-x: hidden;
-}
 .ms_blue {
     color: #0070d1;
 }
@@ -111,9 +108,6 @@ header {
 
 
 /* jumbo */
-#jumbotron {
-    /* padding-top: 75px; */
-}
 .ms_jumbo-top {
     height: 500px;
     background-image: url(../img/jumbo-bg.png);
