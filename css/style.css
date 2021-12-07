@@ -68,10 +68,14 @@ header {
     display:initial;
 }
 .ms_header-top {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 5px;
     background-color: black;
 }
 .ms_header-top img {
     width: 70px;
+    vertical-align: middle;
     cursor: pointer;
 }
 .ms_header-bottom {
@@ -80,6 +84,13 @@ header {
     position: -webkit-sticky;
     top: 0px;
     z-index: 9999;
+}
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.play-logo {
+    padding-left: 10px;
 }
 .ms_navbar li {
     margin-right: 5px;
@@ -113,11 +124,15 @@ header {
     transform: rotate(180deg);
 }
 /* dropdown */
+.dropdown {
+    position: static;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 96%;
+}
 .dropdown-menu {
-    width: 100vw;
-    position: absolute;
-    top: 53px !important;
-    left: -87px !important;
+    width: 100%;
+    border-radius: 0;
 }
 .dropdown-menu li a{
     font-size: 1rem;
@@ -126,7 +141,15 @@ header {
     list-style: none;
 }
 .dropdown-menu .dropdown-item {
-    padding: .50rem ;
+    padding: 1rem .50rem;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+hr {
+    margin: 1rem 0 .50rem 0;
 }
 
 
